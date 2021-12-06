@@ -6,17 +6,23 @@
     <title>device detection</title>
     <script src="https://theapicompany.com/deviceAPI.js?id=deviceAPI-7a77sb7gjg"></script>
     <script>
-        var devicetype = "deviceType: " + deviceAPI.deviceType; //mobile
-        var devicebrand = "deviceBrand: " + deviceAPI.deviceBrand; //Apple
-        var devicename = "devicaName: " + deviceAPI.deviceName; //iPhone XS
+        function detection() {
+            var devicetype = "deviceType: " + deviceAPI.deviceType; //mobile
+            var devicebrand = "deviceBrand: " + deviceAPI.deviceBrand; //Apple
+            var devicename = "devicaName: " + deviceAPI.deviceName; //iPhone XS
 
-        var osname = deviceAPI.osName; //MAC OS X
-        var osversion = deviceAPI.osVersion; //10.14.1
+            var osname = deviceAPI.osName; //MAC OS X
+            var osversion = deviceAPI.osVersion; //10.14.1
 
-        document.body.innerHTML = devicetype + "<br/>" + devicebrand + "<br/>" + devicename;
+            document.getElementById("info").innerHTML = devicetype + "<br/>" + devicebrand + "<br/>" + devicename;
+        }
     </script>
   </head>
   <body>
-    hello world...
+    <h2>Device Detection</h2>
+
+    <button type="button" onclick="detection()">Test</button>
+    <div id="info"></div>
+
   </body>
 </html>
