@@ -7,13 +7,14 @@
     <script src="https://theapicompany.com/deviceAPI.js?id=deviceAPI-7a77sb7gjg"></script>
     <script>
         function detection() {
-            var devicetype = "deviceType: " + deviceAPI.deviceType; //mobile
-            var devicebrand = "deviceBrand: " + deviceAPI.deviceBrand; //Apple
-            var devicename = "devicaName: " + deviceAPI.deviceName; //iPhone XS
+            let devicetype = "deviceType: " + deviceAPI.deviceType; //mobile
+            let devicebrand = "deviceBrand: " + deviceAPI.deviceBrand; //Apple
+            let devicename = "devicaName: " + deviceAPI.deviceName; //iPhone XS
 
-            var osname = deviceAPI.osName; //MAC OS X
-            var osversion = deviceAPI.osVersion; //10.14.1
+            let osname = deviceAPI.osName; //MAC OS X
+            let osversion = deviceAPI.osVersion; //10.14.1
 
+            document.getElementById("info").innerHTML = "";
             document.getElementById("info").innerHTML = devicetype + "<br/>" + devicebrand + "<br/>" + devicename;
         }
     </script>
