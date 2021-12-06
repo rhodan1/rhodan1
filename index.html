@@ -1,1 +1,22 @@
-hello world
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>device detection</title>
+    <script src="https://theapicompany.com/deviceAPI.js?id=deviceAPI-7a77sb7gjg"></script>
+    <script>
+        var devicetype = "deviceType: " + deviceAPI.deviceType; //mobile
+        var devicebrand = "deviceBrand: " + deviceAPI.deviceBrand; //Apple
+        var devicename = "devicaName: " + deviceAPI.deviceName; //iPhone XS
+
+        var osname = deviceAPI.osName; //MAC OS X
+        var osversion = deviceAPI.osVersion; //10.14.1
+
+        document.body.innerHTML = devicetype + "<br/>" + devicebrand + "<br/>" + devicename;
+    </script>
+  </head>
+  <body>
+    hello world...
+  </body>
+</html>
